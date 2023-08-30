@@ -1,0 +1,53 @@
+\documentclass[letterpaper,twocolumn,10pt]{article}
+
+% = = = = = Packages = = = = = %
+
+\input{setup/packages}
+%\input{setup/macros}
+
+
+% = = = = = Title = = = = = %
+
+\begin{document}
+
+\date{}
+
+\title{\Large \bf The Title}
+
+\author{{\rm Jeremy Clark}\\Carleton University}
+
+\maketitle
+
+% Use the following at camera-ready time to suppress page numbers.
+% Comment it out when you first submit the paper for review.
+%\thispagestyle{empty}
+
+
+% = = = = = Abstract = = = = = %
+
+\input{sections/00-abstract}
+
+% = = = = = Main Body = = = = = %
+
+\input{sections/01-intro}
+
+% = = = = = Bibliography = = = = = %
+
+\balance
+{\footnotesize \bibliographystyle{acm}
+\bibliography{bib/}}
+\nocite{*}
+
+% = = = = = End Notes = = = = = %
+
+\clearpage
+\appendix
+
+\end{document}
+
+
+
+
+
+
+
